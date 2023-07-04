@@ -26,7 +26,7 @@ const CiapDetail = () => {
   }, [id]);
 
   if (!item) {
-    return <div>Loading...</div>;
+    return <div className='grid h-screen place-items-center'>Loading...</div>;
   }
 
   return (
@@ -34,8 +34,8 @@ const CiapDetail = () => {
       <Link to='/' className="w-14 mb-12 h-auto rounded-full hover:cursor-pointer  bg-zinc-200 hover:bg-zinc-800 text-white text-center inline-flex items-center px-3 py-3  mr-2 mb-2">
           <IoMdArrowRoundBack size={32} />
       </Link>
-      <div key={item.id} className='flex p-12 aspect-video h-auto w-full items-center justify-center rounded-2xl space-y-4' style={{backgroundColor: item.background}}>
-          <p className='text-6xl font-semibold leading-tight' style={{color: item.fontbackground}}>
+      <div key={item.id} className='flex xl:p-12 xs:p-6 aspect-video h-auto w-full items-center justify-center rounded-2xl space-y-4' style={{backgroundColor: item.background}}>
+          <p className='xl:text-6xl xs:text-2xl font-semibold leading-tight' style={{color: item.fontbackground}}>
             "{item.ciap}"
           </p>
       </div>

@@ -19,7 +19,7 @@ const Home = () => {
     <Web>
       <NavbarHome />
       <section className='container'>
-        <div className='xl:columns-3 xs:columns-2 my-12 space-y-4'>
+        <div className='xl:columns-3 xs:columns-1 my-12 space-y-4'>
           {items.map(item => (
             <div key={item.id} className='flex p-4 rounded-xl space-y-4' style={{backgroundColor: item.background}}>
               <Link to={`/ciap/${item.id}`}>
